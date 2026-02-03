@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Goals</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .banner-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 0;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="starfield"></canvas>
+
+    <header>
+        <h1>Travis Daniels - Career Goals</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="cover-letter.html">Cover Letter</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="career-goals.html" class="active">Career Goals</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+<audio id="ambient-audio" controls autoplay loop>
+    <source src="../audio/background-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- Full width banner -->
+<img src="../images/coding-image.png" alt="Computer screen with code" class="banner-image">
+
+    <main>
+
+        <!-- Career Goals Description-->
+         <section>
+            <h2>Career Goals</h2>
+            <p>I've spent the last five years in IT. Help desk, hardware/software repair, and managing virtual servers. Along the way I've discovered a passion for programming. I'm looking to pivot into software development, using my hands-on IT experience to build systems, and automate tasks that make make processes more efficient.</p>
+         </section>
+
+         <!-- Video -->
+          <section>
+            <h2>Project Demo</h2>
+            <video controls>
+                <source src="../video/project-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Project demo video showing my programming skills in action with a small project i developed</p>
+          </section>
+
+           <!-- Contact Form -->
+            <section>
+            <h2>Contact Me</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="inline-radio">
+                <span class="inline-label">Best Contact Time</span>
+                <label><input type="radio" name="contact-time" value="am" required> a.m.</label>
+                <label><input type="radio" name="contact-time" value="pm"> p.m.</label>
+                <label><input type="radio" name="contact-time" value="anytime"> anytime</label>
+            </div>
+
+
+            <label for="contact-method">Preferred Contact Method:</label>
+            <select id="contact-method" name="contact-method" required>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="text">Text</option>
+            </select>
+
+            <button type="submit">Submit</button>
+            </form>
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Travis Daniels. All rights reserved</p>
+    </footer>
+
+    <script src="../java/stars.js"></script>
+</body>
+</html>
