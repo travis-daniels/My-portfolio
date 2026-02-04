@@ -3,53 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travis Daniels - Cover Letter</title>
+    <title>Travis Daniels | Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
-        <style>
-        .banner-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 0;
-            margin-bottom: 1.5rem;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Travis Daniels - Cover Letter</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="cover-letter.html" class="active">Cover Letter</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="career-goals.html">Career Goals</a></li> 
-            </ul>
-        </nav>
-    </header>
-
-<!-- Full width banner -->
-<img src="../images/coding-image.png" alt="Computer screen with code" class="banner-image">
+<header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="cover-letter.html" class="active">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+</header>
 
 <main>
+<section>
 
+    <!-- Hero Section -->
     <section>
-        <h2>Dear Hiring Manager,</h2>
-        <p>I am writing to express my interest in the <strong>Software Developer</strong> position at your esteemed company. With five years of experience in <em>IT support, hardware/software repair, and virtual server management</em>, I have developed a strong foundation in technology and a passion for programming.</p>
-        <p>Throughout my career, I have consistently sought opportunities to <em>enhance my skills</em> and take on new challenges. My hands-on experience in IT has provided me with a unique perspective on system functionality and user needs, which I believe will be invaluable in a software development role.</p>
-        <p>I am particularly drawn to your company because of its commitment to innovation and excellence in software solutions. I am eager to contribute my <em>technical skills and enthusiasm</em> to your team and help drive the development of cutting-edge applications that meet user needs and exceed expectations.</p>
-        <p>Thank you for considering my application. I look forward to the opportunity to discuss how my background, skills, and <em>passion for programming</em> can contribute to the success of your team.</p>
-        <p>Sincerely,</p>
-        <p>Travis Daniels</p>
-        <br>
-        <hr>
+        <h1>Hi, I’m Travis Daniels</h1>
+        <p>
+            Aspiring software developer with a strong foundation in IT support,
+            systems administration, and a growing passion for building clean,
+            user-focused software.
+        </p>
     </section>
 
+    <!-- Cover Letter Content -->
+    <section>
+        <h2>Cover Letter</h2>
+
+        <article>
+            <p>
+                I am seeking an opportunity as a <strong>Software Developer</strong> where I can
+                leverage my five years of experience in IT support, hardware and software
+                repair, and virtual server management.
+            </p>
+
+            <p>
+                Throughout my career, I have consistently taken initiative to
+                <em>expand my technical skill set</em> and embrace new challenges.
+                My hands-on IT background has given me a practical understanding
+                of system reliability, troubleshooting, and user needs.
+            </p>
+
+            <p>
+                I am especially motivated by organizations that value innovation
+                and high-quality software solutions. I am eager to contribute
+                my technical skills, attention to detail, and enthusiasm for
+                programming to a collaborative development team.
+            </p>
+
+            <p>
+                I would welcome the opportunity to discuss how my background
+                and career goals align with your organization’s needs.
+            </p>
+
+            <p><strong>— Travis Daniels</strong></p>
+        </article>
+    </section>
+
+</section>
 </main>
 
 <footer>
-    <p>&copy; 2026 Travis Daniels. All rights reserved</p>
+    <p>&copy; 2026 Travis Daniels. All rights reserved.</p>
 </footer>
+
+
+<script>
+  const sections = document.querySelectorAll('section.animate');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
 </body>
 </html>
