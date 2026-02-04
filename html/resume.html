@@ -3,131 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travis Daniels - Resume</title>
+    <title>Travis Daniels | Resume</title>
     <link rel="stylesheet" href="../css/style.css">
     <script>
-        function showDate() {
+        window.onload = function () {
             const dateElement = document.getElementById('current-date');
             const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const today = new Date();
-            dateElement.textContent = today.toLocaleDateString(undefined, options);
-            console.log('Resume loaded successfully');
-            console.log('Current date displayed:', dateElement.textContent);
-        }
-        window.onload = showDate;
+            dateElement.textContent = new Date().toLocaleDateString(undefined, options);
+        };
     </script>
-        <style>
-        .banner-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 0;
-            margin-bottom: 1.5rem;
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Travis Daniels - Resume</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="resume.html" class="active">Resume</a></li>
-                <li><a href="career-goals.html">Career Goals</a></li> 
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="cover-letter.html">Home</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+            <li><a href="career-goals.html">Career Goals</a></li>
+        </ul>
+    </nav>
+</header>
 
-<!-- Full width banner -->
-<img src="../images/coding-image.png" alt="Computer screen with code" class="banner-image"> 
+<main>
+<section>
+    <!-- Resume Header -->
+    <section class="animate">
+        <h1>Travis Daniels</h1>
+        <p>
+            Austin, TX · travis.daniels@example.com · (555) 123-4567 ·
+            linkedin.com/in/travisd
+        </p>
+        <p id="current-date"></p>
+    </section>
 
-    <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p><strong>Email:</strong> travis.daniels@example.com</p>
-            <p><strong>Phone:</strong> (555) 123-4567</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/travisd</p>
-            <p><strong>Location:</strong> Austin, TX</p>
-            <div id="current-date"></div> 
-            <br>
-        </section>
+    <!-- Summary -->
+    <section class="animate">
+        <h2>Professional Summary</h2>
+        <p>
+            Detail-oriented IT professional with <strong>5 years of experience</strong>
+            in help desk support, hardware and software repair, and virtual server
+            management. Actively transitioning into software development with a
+            strong interest in automation, system efficiency, and clean code.
+        </p>
+    </section>
 
-        <section>
-            <h2>Professional Summary</h2>
-            <p>Detail-oriented IT professional with <em>5 years</em> of experience in help desk support, hardware/software repair, and virtual server management. Passionate about programming and eager to transition into software development to leverage hands-on IT experience for building efficient systems and automating processes.</p>
-        </section>
+    <!-- Skills -->
+    <section class="animate">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, JavaScript, HTML, CSS</li>
+            <li><strong>Systems:</strong> Windows, Linux</li>
+            <li><strong>Administration:</strong> PowerShell, Windows Server</li>
+            <li><strong>Virtualization:</strong> VMware, Hyper-V</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, JavaScript, HTML/CSS</li>
-                <li>Powershell & Windows Administration</li>
-                <li>Operating Systems: Windows, Linux</li>
-                <li>Virtualization: VMware, Hyper-V</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-
-        <article>    
-            <h3>Systems Administrator | Tech Solutions Inc. | 2024 - Present</h3>
-            <ul>
-                <li>Maintained and monitored system performance and availability.</li>
-                <li>Managed and maintained virtual servers using VMware and Hyper-V.</li>
-                <li>Developed scripts to automate routine tasks, improving efficiency by 30%.</li>
-            </ul>
-        </article>
-        <hr>
+    <!-- Experience -->
+    <section class="animate">
+        <h2>Professional Experience</h2>
 
         <article>
-            <h3>Computer Repair Agent | IT Services Co. | 2022 - 2024</h3>
+            <h3>Systems Administrator — Tech Solutions Inc.</h3>
+            <span>2024 – Present</span>
             <ul>
-                <li>Provided technical support to over 200 end-users, resolving hardware and software issues efficiently.</li>
-                <li>Performed hardware diagnostics and repairs on desktops, laptops, and peripherals.</li>
-                <li>Managed inventory of spare parts and maintained equipment maintenance logs.</li>
+                <li>Monitored and maintained system performance and availability.</li>
+                <li>Managed virtual servers using VMware and Hyper-V.</li>
+                <li>Developed automation scripts that improved operational efficiency by 30%.</li>
             </ul>
         </article>
-        <hr>
 
         <article>
-            <h3>Help Desk Technician | IT Services Co. | 2021 - 2022</h3>
+            <h3>Computer Repair Agent — IT Services Co.</h3>
+            <span>2022 – 2024</span>
             <ul>
-                <li>Assisted users with troubleshooting hardware and software problems.</li>
-                <li>Documented support requests and resolutions for future reference.</li>
-                <li>Instructed users on proper equipment usage and best practices.</li>
+                <li>Provided technical support to 200+ end users.</li>
+                <li>Diagnosed and repaired desktops, laptops, and peripherals.</li>
+                <li>Tracked inventory and maintained maintenance documentation.</li>
             </ul>
-        </article>    
-        <hr>
-        </section>
+        </article>
 
-        <section>
-            <h2>Education</h2>
+        <article>
+            <h3>Help Desk Technician — IT Services Co.</h3>
+            <span>2021 – 2022</span>
+            <ul>
+                <li>Troubleshot hardware and software issues across multiple environments.</li>
+                <li>Documented incidents and resolutions for knowledge base use.</li>
+                <li>Educated users on best practices and system usage.</li>
+            </ul>
+        </article>
+    </section>
 
-            <article>
-            <p><strong>Bachelors in Information Technology</strong> | Code Academy </p>
-            <p>Graduate: 2024</p>
-            </article>
-            <hr>
+    <!-- Education -->
+    <section class="animate">
+        <h2>Education</h2>
 
-            <article>
-            <p><strong>Associate Degree in Criminal Justice</strong> | City College </p>
-            <p>Graduate: 2021</p>
-            </article>
-            <hr>
-        </section>
+        <article>
+            <p><strong>Bachelor of Information Technology</strong> — Code Academy</p>
+            <span>Graduated 2024</span>
+        </article>
 
-        <section>
-            <h2>Certifications</h2>
-            <table>
+        <article>
+            <p><strong>Associate Degree, Criminal Justice</strong> — City College</p>
+            <span>Graduated 2021</span>
+        </article>
+    </section>
+
+    <!-- Certifications -->
+    <section class="animate">
+        <h2>Certifications</h2>
+        <table>
+            <caption>Professional Certifications</caption>
+            <thead>
                 <tr>
                     <th>Certification</th>
-                    <th>Issuing Organization</th>
-                    <th>Date Obtained</th>
-                    <th>Expiration Date</th>
+                    <th>Organization</th>
+                    <th>Issued</th>
+                    <th>Expires</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
                     <td>CompTIA A+</td>
                     <td>CompTIA</td>
@@ -135,13 +131,13 @@
                     <td>2026</td>
                 </tr>
                 <tr>
-                    <td>Microsoft Certified: Azure Fundamentals</td>
+                    <td>Microsoft Azure Fundamentals</td>
                     <td>Microsoft</td>
                     <td>2023</td>
                     <td>2026</td>
                 </tr>
                 <tr>
-                    <td>VMware Certified Professional - Data Center Virtualization (VCP-DCV)</td>
+                    <td>VMware VCP-DCV</td>
                     <td>VMware</td>
                     <td>2024</td>
                     <td>2027</td>
@@ -156,15 +152,32 @@
                     <td>CompTIA Security+</td>
                     <td>CompTIA</td>
                     <td>2025</td>
-                    <td>2028</td>   
-                </tr>   
-            </table>
-        </section>
-
-    </main>
+                    <td>2028</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+</section>
+</main>
 
 <footer>
-    <p>&copy; 2026 Travis Daniels. All rights reserved</p>
+    <p>&copy; 2026 Travis Daniels. All rights reserved.</p>
 </footer>
+
+
+<script>
+  const sections = document.querySelectorAll('section.animate');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
 </body>
 </html>
