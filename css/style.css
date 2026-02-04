@@ -140,28 +140,75 @@ ul, ol {
     margin-bottom: 1rem;
 }
 
+/* Section background and padding */
+section.animate {
+    background-color: var(--section-bg, #f9f9f9);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto; /* Allow horizontal scroll if table is too wide */
+}
+
 /* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1.5rem;
+    min-width: 300px; /* Prevent collapsing too small */
 }
 
+/* Table captions */
 caption {
     text-align: left;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
+/* Table cells */
 th, td {
     padding: 0.75rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color, #ddd);
+    text-align: left;
 }
 
+/* Table header */
 th {
-    text-align: left;
     font-weight: 600;
+    background-color: var(--header-bg, #eee);
 }
+
+/* Responsive: stack cells on small screens */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none; /* Hide header on small screens */
+    }
+
+    tr {
+        margin-bottom: 1rem;
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 1px solid var(--border-color, #ddd);
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        flex-basis: 40%;
+        text-align: left;
+    }
+}
+
 
 /* Media */
 img {
@@ -297,3 +344,4 @@ textarea:focus {
     border-radius: 4px;  /* match your button/input rounding */
     transition: box-shadow 0.2s ease-in-out;
 }
+
