@@ -3,79 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Career Goals</title>
+    <title>Travis Daniels | Career Goals</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .banner-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 0;
-            margin-bottom: 1.5rem;
-        }
-    </style>
 </head>
+
 <body>
 
-    <canvas id="starfield"></canvas>
+<header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="cover-letter.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career-goals.html" class="active">Career Goals</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <header>
-        <h1>Travis Daniels - Career Goals</h1>
-        <nav>
-            <ul class="nav-menu">
-                <li><a href="cover-letter.html">Cover Letter</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="career-goals.html" class="active">Career Goals</a></li> 
+<main>
+<section>
+
+    <!-- Career Direction -->
+    <section class="animate">
+        <h1>Career Goals</h1>
+        <p>
+            I have spent the past five years building a strong foundation in IT through
+            help desk support, hardware and software repair, and virtual server
+            administration. During this time, I discovered a passion for programming
+            and problem-solving that has driven my transition toward software development.
+        </p>
+        <p>
+            My goal is to leverage my hands-on IT experience to design and build
+            efficient, reliable systems and develop software that improves workflows
+            through automation and thoughtful design.
+        </p>
+    </section>
+
+    <!-- Short & Long Term Goals -->
+    <section class="animate">
+        <h2>Professional Objectives</h2>
+
+        <article>
+            <h3>Short-Term Goals</h3>
+            <ul>
+                <li>Secure a junior software developer or automation-focused role</li>
+                <li>Strengthen proficiency in JavaScript, Python, and modern frameworks</li>
+                <li>Contribute to real-world projects in a collaborative team environment</li>
             </ul>
-        </nav>
-    </header>
+        </article>
 
-<audio id="ambient-audio" controls autoplay loop>
-    <source src="../audio/background-audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
+        <article>
+            <h3>Long-Term Goals</h3>
+            <ul>
+                <li>Design scalable applications and automation tools</li>
+                <li>Bridge the gap between IT operations and software development</li>
+                <li>Mentor others transitioning into technical careers</li>
+            </ul>
+        </article>
+    </section>
 
-<!-- Full width banner -->
-<img src="../images/coding-image.png" alt="Computer screen with code" class="banner-image">
+    <!-- Project Demo -->
+    <section class="animate">
+        <h2>Project Demonstration</h2>
+        <video controls>
+            <source src="../video/project-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>
+            This project demonstrates my ability to apply programming concepts to
+            practical problems, focusing on clean code, functionality, and usability.
+        </p>
+    </section>
 
-    <main>
+    <!-- Contact -->
+    <section class="animate">
+        <h2>Get in Touch</h2>
 
-        <!-- Career Goals Description-->
-         <section>
-            <h2>Career Goals</h2>
-            <p>I've spent the last five years in IT. Help desk, hardware/software repair, and managing virtual servers. Along the way I've discovered a passion for programming. I'm looking to pivot into software development, using my hands-on IT experience to build systems, and automate tasks that make make processes more efficient.</p>
-         </section>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
 
-         <!-- Video -->
-          <section>
-            <h2>Project Demo</h2>
-            <video controls>
-                
-                Your browser does not support the video tag.
-            </video>
-            <p>Project demo video showing my programming skills in action with a small project i developed</p>
-          </section>
-
-           <!-- Contact Form -->
-            <section>
-            <h2>Contact Me</h2>
-            <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank">
-            <label for="first-name">First Name:</label>
+            <label for="first-name">First Name</label>
             <input type="text" id="first-name" name="first-name" required>
 
-            <label for="last-name">Last Name:</label>
+            <label for="last-name">Last Name</label>
             <input type="text" id="last-name" name="last-name" required>
 
-            <label for="company">Company:</label>
+            <label for="company">Company</label>
             <input type="text" id="company" name="company">
 
-            <label for="email">Email:</label>
+            <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="phone">Phone:</label>
+            <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone">
 
-            <label for="message">Message:</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <div class="inline-radio">
@@ -85,8 +105,7 @@
                 <label><input type="radio" name="contact-time" value="anytime"> anytime</label>
             </div>
 
-
-            <label for="contact-method">Preferred Contact Method:</label>
+            <label for="contact-method">Preferred Contact Method</label>
             <select id="contact-method" name="contact-method" required>
                 <option value="email">Email</option>
                 <option value="phone">Phone</option>
@@ -94,15 +113,29 @@
             </select>
 
             <button type="submit">Submit</button>
-            </form>
-            </section>
-    </main>
+        </form>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Travis Daniels. All rights reserved</p>
-    </footer>
+</section>    
+</main>
 
-    <script src="../java/stars.js"></script>
+<footer>
+    <p>&copy; 2026 Travis Daniels. All rights reserved.</p>
+</footer>
+
+
+<script>
+  const sections = document.querySelectorAll('section.animate');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
 </body>
-
 </html>
