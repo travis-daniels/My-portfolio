@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travis Daniels | Systems Administrator</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="cover-letter.html" class="active">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="career-goals.html">Goals & Projects</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section>
+
+    <!-- Hero Section -->
+    <section class="animate">
+        <h1>Hi, I’m Travis Daniels</h1>
+        <p>
+            Systems Administrator with hands-on experience in Microsoft 365, Active Directory,
+            and enterprise infrastructure. Focused on automation, security, and improving
+            operational efficiency through PowerShell-driven solutions.
+        </p>
+    </section>
+
+    <!-- Cover Letter Content -->
+    <section class="animate">
+        <h2>Professional Summary</h2>
+
+        <article>
+            <p>
+                I am currently working as a <strong>Systems Administrator</strong> with the
+                Charlotte County Board of County Commissioners, where I manage user lifecycle
+                processes, Microsoft 365 environments, and core infrastructure services.
+                My responsibilities include Active Directory administration, onboarding and
+                offboarding users, license management, and troubleshooting mail flow and
+                account-related issues.
+            </p>
+
+            <p>
+                A key focus of my role is <strong>automation</strong>. I have developed multiple
+                PowerShell solutions, including a centralized administrative dashboard and scripts that
+                streamline onboarding, offboarding, and system management tasks. These tools
+                have significantly reduced manual workload while improving consistency and efficiency.
+            </p>
+
+            <p>
+                I have also gained hands-on experience in <strong>email security and threat response</strong>
+                through Microsoft Defender for Office 365. This includes performing message traces,
+                investigating phishing attempts, analyzing email exposure, and removing malicious
+                messages from user inboxes. Additionally, I have implemented and refined
+                Conditional Access policies, including restrictions on overseas access aligned
+                with security best practices.
+            </p>
+
+            <p>
+                I am currently pursuing my Bachelor’s degree, expected December 2026, and hold
+                industry certifications including CompTIA Security+, CompTIA Project+, and ITIL Foundations.
+                My goal is to continue advancing into a <strong>Security Administrator</strong> role
+                where I can further develop my skills in identity protection, email security,
+                and infrastructure defense.
+            </p>
+
+            <p>
+                I would welcome the opportunity to contribute my technical experience,
+                problem-solving mindset, and focus on automation and security to your team.
+            </p>
+
+            <p><strong>— Travis Daniels</strong></p>
+        </article>
+    </section>
+
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Travis Daniels. All rights reserved.</p>
+</footer>
+
+<script>
+  const sections = document.querySelectorAll('section.animate');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
