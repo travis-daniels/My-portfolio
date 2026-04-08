@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Portfolio</title>
+    <title>Travis Daniels | Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- your CSS file -->
 </head>
 <body>
@@ -11,22 +11,51 @@
 <header>
     <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="./html/cover-letter.html">Career</a></li>
+            <li><a href="./html/cover-letter.html" class="active">Home / Career</a></li>
+            <li><a href="./html/resume.html">Resume</a></li>
+            <li><a href="./html/career-goals.html">Projects & Goals</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section>
+    <!-- Hero Section -->
+    <section class="hero">
         <h1>Welcome to My Portfolio</h1>
-        <p>Hello! I’m Travis Daniels. Here you can explore my professional background, career goals, and documents that showcase my experience and skills.</p>
+        <p>Hi, I’m Travis Daniels, a Systems Administrator with expertise in Active Directory, Microsoft 365, automation, and email security. Explore my professional experience, career goals, and projects below.</p>
         <button onclick="window.location.href='./html/cover-letter.html'">View My Career</button>
     </section>
 
-    <section>
+    <!-- About Me Section -->
+    <section class="about-me">
         <h2>About Me</h2>
-        <p>I am passionate about technology, web development, and continuous learning. This site showcases my résumé, cover letter, and career goals.</p>
+        <p>
+            I am passionate about technology, IT operations, cybersecurity, and continuous learning. 
+            My experience spans user lifecycle management, system administration, automation via PowerShell, and Microsoft 365 security. 
+            This site showcases my résumé, cover letter, projects, and career goals.
+        </p>
+    </section>
+
+    <!-- Quick Links / Callouts -->
+    <section class="quick-links">
+        <h2>Explore</h2>
+        <div class="links-container">
+            <div class="card">
+                <h3>Resume</h3>
+                <p>View my one-page, security-focused resume highlighting administration and automation experience.</p>
+                <button onclick="window.location.href='./html/resume.html'">View Resume</button>
+            </div>
+            <div class="card">
+                <h3>Career Goals & Projects</h3>
+                <p>Check out the projects I've built, including PowerShell automation scripts and centralized admin dashboards.</p>
+                <button onclick="window.location.href='./html/career-goals.html'">View Projects</button>
+            </div>
+            <div class="card">
+                <h3>Contact</h3>
+                <p>Reach out via email for professional inquiries, opportunities, or collaboration.</p>
+                <button onclick="window.location.href='mailto:travis.daniels4@yahoo.com'">Email Me</button>
+            </div>
+        </div>
     </section>
 </main>
 
