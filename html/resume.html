@@ -1,17 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume and technical portfolio of Travis Daniels, Systems Administrator specializing in enterprise automation, cloud infrastructure, and systems engineering.">
     <title>Travis Daniels | Resume</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script>
-        window.onload = function () {
-            const dateElement = document.getElementById('current-date');
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            dateElement.textContent = new Date().toLocaleDateString(undefined, options);
-        };
-    </script>
 </head>
 
 <body>
@@ -21,95 +16,407 @@
         <ul class="nav-menu">
             <li><a href="cover-letter.html">Home</a></li>
             <li><a href="resume.html" class="active">Resume</a></li>
-            <li><a href="career-goals.html">Goals & Projects</a></li>
+            <li><a href="career-goals.html">Goals &amp; Projects</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-<section>
 
     <!-- Resume Header -->
     <section class="animate">
         <h1>Travis Daniels</h1>
+        <h2>Systems Administrator | Enterprise Automation | Cloud Infrastructure</h2>
+
         <p>
-            North Port, FL · travis.daniels4@yahoo.com · <a href="https://www.linkedin.com/in/travis-l-daniels" target="_blank">LinkedIn</a>
+            North Port, Florida |
+            <a href="mailto:travis.daniels4@yahoo.com">travis.daniels4@yahoo.com</a>
         </p>
-        <p id="current-date"></p>
+
+        <p>
+            <a href="https://www.linkedin.com/in/travis-l-daniels" target="_blank" rel="noopener noreferrer">
+                LinkedIn Profile
+            </a>
+            |
+            <a href="https://travis-daniels.github.io/My-portfolio/" target="_blank" rel="noopener noreferrer">
+                Online Portfolio
+            </a>
+        </p>
+
+        <p><strong>Last Updated:</strong> <span id="lastUpdated"></span></p>
     </section>
 
-    <!-- Summary -->
+    <!-- Professional Summary -->
     <section class="animate">
         <h2>Professional Summary</h2>
+
         <p>
-            Systems Administrator with 4 years of experience supporting secure IT environments across
-            government and military organizations. Strong background in Microsoft 365, Active Directory,
-            and infrastructure support, with hands-on experience in <strong>email security, identity management,
-            and access control</strong>. Experienced in using PowerShell to automate administrative tasks. CompTIA Security+ certified and actively expanding skills in
-            security operations and system hardening.
+            Systems Administrator with experience supporting enterprise IT infrastructure
+            in a local government environment, backed by military technical experience and
+            leadership. Experienced in Microsoft 365 administration, Active Directory,
+            Microsoft Entra ID, identity and access management, infrastructure monitoring,
+            and PowerShell automation.
+        </p>
+
+        <p>
+            Focused on improving IT operations through enterprise automation, infrastructure
+            management, and centralized monitoring. Experienced in developing administrative
+            automation solutions, supporting hybrid IT environments, and contributing to
+            large-scale network operations center (NOC) monitoring initiatives.
+        </p>
+
+        <p>
+            Holds a Bachelor of Science in Information Technology from Western Governors
+            University, along with industry certifications in networking, cybersecurity,
+            cloud fundamentals, and IT service management. Long-term career interests include
+            enterprise automation, cloud infrastructure, and systems engineering.
         </p>
     </section>
 
-    <!-- Skills -->
+    <!-- Technical Skills -->
     <section class="animate">
         <h2>Technical Skills</h2>
+
+        <h3>Systems Administration &amp; Infrastructure</h3>
         <ul>
-            <li><strong>Infrastructure:</strong> Active Directory, DNS, DHCP, SCCM, File Shares</li>
-            <li><strong>Microsoft 365:</strong> Exchange Online, Mail Flow, License Management</li>
-            <li><strong>Security:</strong> Defender for Office 365, Conditional Access, Palo Alto Firewall</li>
-            <li><strong>Automation:</strong> PowerShell scripting, process automation, power automate</li>
+            <li>Windows Server administration and enterprise infrastructure support</li>
+            <li>Active Directory, Group Policy, DNS, and DHCP</li>
+            <li>Microsoft Entra ID and hybrid identity environments</li>
+            <li>File server administration, permissions, and shared resources</li>
+            <li>VMware virtualization and virtual machine administration</li>
+            <li>NetApp storage and SnapCenter infrastructure support</li>
+            <li>System monitoring, troubleshooting, and infrastructure reliability</li>
+        </ul>
+
+        <h3>Microsoft 365 &amp; Enterprise Administration</h3>
+        <ul>
+            <li>Microsoft 365 administration and license management</li>
+            <li>Exchange Online, mail flow, shared mailboxes, and distribution groups</li>
+            <li>Microsoft Intune and endpoint management</li>
+            <li>Microsoft Configuration Manager (SCCM)</li>
+            <li>Microsoft Defender for Office 365</li>
+            <li>Conditional Access and identity protection</li>
+            <li>Microsoft Graph and administrative PowerShell modules</li>
+        </ul>
+
+        <h3>Automation &amp; Scripting</h3>
+        <ul>
+            <li>PowerShell scripting and administrative process automation</li>
+            <li>Windows Forms and WPF administrative interfaces</li>
+            <li>Microsoft Power Automate workflow development</li>
+            <li>Active Directory and Microsoft 365 account lifecycle automation</li>
+            <li>Reporting, auditing, and administrative task automation</li>
+            <li>Python programming fundamentals and IT automation concepts</li>
+        </ul>
+
+        <h3>Monitoring, Networking &amp; Security</h3>
+        <ul>
+            <li>Paessler PRTG Network Monitor and custom monitoring dashboards</li>
+            <li>Network infrastructure monitoring and troubleshooting</li>
+            <li>Switches, wireless access points, servers, and UPS systems</li>
+            <li>Palo Alto firewall administration and security concepts</li>
+            <li>Network troubleshooting, TCP/IP, DNS, and DHCP</li>
+            <li>Email threat investigation and phishing response</li>
+            <li>Security policies, access controls, and vulnerability awareness</li>
+        </ul>
+
+        <h3>Web &amp; Development Technologies</h3>
+        <ul>
+            <li>HTML and CSS</li>
+            <li>JavaScript fundamentals</li>
+            <li>SVG graphics and visual dashboard development</li>
+            <li>Python programming fundamentals</li>
+            <li>Generative AI applications and business automation concepts</li>
         </ul>
     </section>
 
-    <!-- Experience -->
+    <!-- Professional Experience -->
     <section class="animate">
         <h2>Professional Experience</h2>
 
         <article>
-            <h3>Systems Administrator — Charlotte County BCC</h3>
-            <span>Feb 2025 – Present</span>
+            <h3>Systems Administrator</h3>
+            <p><strong>Charlotte County Board of County Commissioners</strong></p>
+            <p><em>February 2025 – Present</em></p>
+
             <ul>
-                <li>Manage Active Directory user lifecycle including secure onboarding and offboarding</li>
-                <li>Administer Microsoft 365 including mail flow troubleshooting and license management</li>
-                <li>Investigate email issues using message trace and Exchange Online tools</li>
-                <li>Utilize Microsoft Defender for Office 365 to analyze suspicious emails, attachments, and affected users</li>
-                <li>Implement Conditional Access policies including restrictions on overseas access</li>
-                <li>Develop PowerShell scripts to automate administrative tasks</li>
-                <li>Support infrastructure services including DNS, DHCP, SCCM, and file share permissions</li>
+                <li>
+                    Administer and support enterprise IT infrastructure in a hybrid
+                    on-premises Active Directory and Microsoft Entra ID environment.
+                </li>
+                <li>
+                    Manage Microsoft 365 services, including Exchange Online, user
+                    licensing, shared mailboxes, distribution groups, and mail flow.
+                </li>
+                <li>
+                    Support user account lifecycle processes, including onboarding,
+                    offboarding, department transfers, account modifications, and
+                    access management.
+                </li>
+                <li>
+                    Develop PowerShell automation to streamline administrative workflows,
+                    reduce repetitive tasks, and improve consistency across IT operations.
+                </li>
+                <li>
+                    Develop and maintain automation for account management, security group
+                    administration, license auditing, reporting, and stale device cleanup.
+                </li>
+                <li>
+                    Support Microsoft Intune, SCCM, Windows infrastructure, DNS, DHCP,
+                    file services, and enterprise endpoint administration.
+                </li>
+                <li>
+                    Investigate email delivery issues, perform message tracing, and
+                    investigate phishing and suspicious email activity using Microsoft
+                    Defender for Office 365 and Exchange Online tools.
+                </li>
+                <li>
+                    Assist with Conditional Access policy administration and identity
+                    security improvements.
+                </li>
+                <li>
+                    Troubleshoot enterprise infrastructure issues involving virtualization,
+                    storage, backups, and Windows server services.
+                </li>
+                <li>
+                    Contribute to infrastructure monitoring and NOC initiatives using
+                    PRTG Network Monitor, custom dashboards, and geographic device mapping.
+                </li>
             </ul>
         </article>
 
         <article>
-            <h3>Client Systems Technician — United States Air Force</h3>
-            <span>2022 – 2026</span>
+            <h3>Advanced Repair Agent</h3>
+            <p><strong>Geek Squad</strong></p>
+            <p><em>2022 – 2025</em></p>
+
             <ul>
-                <li>Maintain and support systems in mission-critical environments</li>
-                <li>Provide user and administrator support for hardware, software, and access issues</li>
-                <li>Monitor systems in a 24/7 environment and resolve performance issues</li>
-                <li>Implement process improvements to increase system efficiency and reliability</li>
+                <li>
+                    Diagnosed and resolved hardware, software, operating system,
+                    and connectivity issues across a variety of computer systems.
+                </li>
+                <li>
+                    Performed operating system installations, system recovery,
+                    troubleshooting, and hardware replacement.
+                </li>
+                <li>
+                    Communicated technical findings and repair recommendations
+                    to customers with varying levels of technical knowledge.
+                </li>
+                <li>
+                    Managed repair workflows while maintaining service quality,
+                    documentation, and customer communication.
+                </li>
             </ul>
         </article>
 
         <article>
-            <h3>Advanced Repair Agent — Geek Squad</h3>
-            <span>2022 – 2025</span>
+            <h3>Client Systems Technician</h3>
+            <p><strong>United States Air Force – Air National Guard</strong></p>
+            <p><em>2022 – 2026</em></p>
+
             <ul>
-                <li>Diagnose and repair computers and mobile devices</li>
-                <li>Perform OS installs, upgrades, and troubleshooting</li>
-                <li>Educate users on cybersecurity best practices including phishing awareness</li>
-                <li>Track and document incidents using ticketing systems</li>
+                <li>
+                    Supported client systems and information technology operations
+                    within an Air National Guard environment.
+                </li>
+                <li>
+                    Assisted with workstation, hardware, software, and connectivity
+                    troubleshooting.
+                </li>
+                <li>
+                    Supported reliable operation of client systems while following
+                    established technical procedures and security requirements.
+                </li>
+                <li>
+                    Applied military technical training and operational experience
+                    to enterprise IT support and troubleshooting.
+                </li>
             </ul>
         </article>
 
         <article>
-            <h3>Security Forces Patrol Lead — United States Air Force</h3>
-            <span>2014 – 2022</span>
+            <h3>Security Forces Patrol Lead</h3>
+            <p><strong>United States Air Force – Active Duty</strong></p>
+            <p><em>2014 – 2022</em></p>
+
             <ul>
-                <li>Led and managed a team of 90 personnel in high-pressure environments</li>
-                <li>Developed SOPs and training programs improving operational efficiency</li>
-                <li>Streamlined communication between leadership and operational teams</li>
-                <li>Maintained accountability and mission readiness</li>
+                <li>
+                    Led and coordinated a team of approximately 90 personnel
+                    responsible for security and operational readiness.
+                </li>
+                <li>
+                    Developed standard operating procedures and training programs
+                    to improve consistency, communication, and operational effectiveness.
+                </li>
+                <li>
+                    Maintained personnel accountability, mission readiness,
+                    and compliance with established procedures.
+                </li>
+                <li>
+                    Coordinated team activities, delegated responsibilities,
+                    and supported time-sensitive operational requirements.
+                </li>
+                <li>
+                    Developed leadership, problem-solving, communication,
+                    and decision-making skills in a high-accountability environment.
+                </li>
             </ul>
+        </article>
+    </section>
+
+    <!-- Featured Project -->
+    <section class="animate">
+        <h2>Featured Infrastructure Project</h2>
+
+        <article>
+            <h3>Countywide PRTG Monitoring &amp; NOC Dashboard Initiative</h3>
+            <p><strong>Charlotte County Board of County Commissioners</strong></p>
+
+            <p>
+                Contributed to the development and organization of a countywide
+                infrastructure monitoring environment using PRTG Network Monitor.
+                The initiative provides centralized visibility into infrastructure
+                health across county operations.
+            </p>
+
+            <h3>Environment Scale</h3>
+            <ul>
+                <li>Approximately 370 servers</li>
+                <li>Approximately 1,200 network devices</li>
+                <li>Approximately 8,500 monitoring sensors</li>
+            </ul>
+
+            <h3>Responsibilities &amp; Contributions</h3>
+            <ul>
+                <li>
+                    Held primary responsibility for organizing and structuring
+                    monitored equipment throughout the PRTG environment.
+                </li>
+                <li>
+                    Organized monitoring visibility for servers, switches,
+                    wireless access points, UPS systems, and environmental controls.
+                </li>
+                <li>
+                    Contributed to custom dashboard development using HTML,
+                    CSS, JavaScript, and SVG.
+                </li>
+                <li>
+                    Helped develop an eight-display NOC monitoring wall using
+                    4K portrait-oriented televisions and custom dashboard views.
+                </li>
+                <li>
+                    Independently handled the organization and physical location
+                    mapping of monitored equipment for a separate geographic
+                    PRTG map covering county infrastructure.
+                </li>
+                <li>
+                    Configured the geographic monitoring view for a dedicated
+                    ninth display, providing countywide device location and status
+                    visibility.
+                </li>
+            </ul>
+
+            <p>
+                <strong>Technologies:</strong>
+                PRTG Network Monitor, HTML, CSS, JavaScript, SVG,
+                network monitoring, infrastructure visualization.
+            </p>
+        </article>
+    </section>
+
+    <!-- Additional Automation Projects -->
+    <section class="animate">
+        <h2>Additional Projects &amp; Automation Initiatives</h2>
+
+        <article>
+            <h3>PowerShell Administrative Automation Dashboard</h3>
+            <p>
+                Developed a graphical PowerShell-based administrative tool to
+                centralize common IT support and systems administration tasks.
+            </p>
+            <ul>
+                <li>Active Directory group lookups and administrative operations.</li>
+                <li>User account unlock and support functions.</li>
+                <li>Server connectivity checks and troubleshooting utilities.</li>
+                <li>Graphical interface development using Windows Forms.</li>
+            </ul>
+            <p><strong>Technologies:</strong> PowerShell, Active Directory, Windows Forms.</p>
+        </article>
+
+        <article>
+            <h3>User Lifecycle &amp; Account Management Automation</h3>
+            <p>
+                Developed automation to improve consistency and efficiency
+                across employee account lifecycle processes.
+            </p>
+            <ul>
+                <li>Automated portions of onboarding and offboarding workflows.</li>
+                <li>Supported department transfers and user account updates.</li>
+                <li>Automated security group and Microsoft 365 administration tasks.</li>
+                <li>Improved repeatability of account management and reporting processes.</li>
+            </ul>
+            <p><strong>Technologies:</strong> PowerShell, Active Directory, Entra ID, Microsoft 365.</p>
+        </article>
+
+        <article>
+            <h3>HR New User Ticket Creation Application</h3>
+            <p>
+                Developed a graphical application concept to streamline the
+                collection of new-hire information and creation of IT service
+                requests from HR-provided information.
+            </p>
+            <ul>
+                <li>Created a WPF interface for entering and reviewing employee information.</li>
+                <li>Integrated Active Directory information lookup and autocomplete functionality.</li>
+                <li>Included support for new-hire and rehire ticket workflows.</li>
+                <li>Developed Outlook draft creation to support the ticket submission process.</li>
+            </ul>
+            <p><strong>Technologies:</strong> PowerShell, WPF, Active Directory, Outlook.</p>
+        </article>
+
+        <article>
+            <h3>Microsoft 365 Administration &amp; License Auditing</h3>
+            <p>
+                Developed administrative scripts and reporting workflows to
+                support Microsoft 365 account and license management.
+            </p>
+            <ul>
+                <li>Automated license auditing and reporting.</li>
+                <li>Supported Microsoft 365 group and distribution list administration.</li>
+                <li>Developed workflows for account updates and administrative reporting.</li>
+                <li>Supported Exchange Online and identity administration processes.</li>
+            </ul>
+            <p><strong>Technologies:</strong> PowerShell, Exchange Online, Microsoft Graph, Entra ID.</p>
+        </article>
+
+        <article>
+            <h3>Conditional Access &amp; Identity Security Improvements</h3>
+            <p>
+                Supported identity security initiatives through Conditional Access
+                policy administration and access control improvements.
+            </p>
+            <ul>
+                <li>Assisted with restrictions targeting sign-ins from overseas locations.</li>
+                <li>Supported identity protection and access policy improvements.</li>
+                <li>Investigated suspicious email and account activity.</li>
+                <li>Applied security best practices to Microsoft 365 administration.</li>
+            </ul>
+            <p><strong>Technologies:</strong> Microsoft Entra ID, Conditional Access, Defender for Office 365.</p>
+        </article>
+
+        <article>
+            <h3>Microsoft Power Automate Workflow Development</h3>
+            <p>
+                Created workflow automation to reduce repetitive administrative
+                tasks and support recurring IT processes.
+            </p>
+            <ul>
+                <li>Developed automated processes for recurring administrative activities.</li>
+                <li>Supported standardized tracking and reporting workflows.</li>
+                <li>Applied workflow automation to improve operational consistency.</li>
+            </ul>
+            <p><strong>Technologies:</strong> Microsoft Power Automate, Microsoft 365.</p>
         </article>
     </section>
 
@@ -118,72 +425,165 @@
         <h2>Education</h2>
 
         <article>
-            <p><strong>Bachelor of Information Technology</strong> — Western Governors University</p>
-            <span>Expected December 2026</span>
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p><strong>Western Governors University</strong></p>
+            <p><em>Completed 2026</em></p>
+            <p>
+                Academic focus included computer systems, networking, cloud
+                fundamentals, Python programming, IT automation, business
+                applications of generative AI, Agile/Scrum methodologies,
+                and analytical problem-solving.
+            </p>
         </article>
 
         <article>
-            <p><strong>Associate in Criminal Justice</strong> — Community College of the Air Force</p>
-            <span>2024</span>
+            <h3>Associate of Applied Science in Criminal Justice</h3>
+            <p><strong>Community College of the Air Force</strong></p>
+            <p><em>2024</em></p>
         </article>
 
         <article>
-            <p><strong>Associate of Arts in Information Technology</strong> — State College of Florida</p>
-            <span>2023</span>
+            <h3>Associate of Arts in Information Technology</h3>
+            <p><strong>State College of Florida</strong></p>
+            <p><em>2023</em></p>
+        </article>
+
+        <article>
+            <h3>Planned Graduate Education</h3>
+            <p><strong>Western Governors University</strong></p>
+            <p>
+                Plans to pursue a master's degree in Business Information Technology.
+            </p>
         </article>
     </section>
 
     <!-- Certifications -->
     <section class="animate">
         <h2>Certifications</h2>
-        <table>
-            <caption>Professional Certifications</caption>
-            <thead>
-                <tr>
-                    <th>Certification</th>
-                    <th>Organization</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>CompTIA Security+</td>
-                    <td>CompTIA</td>
-                </tr>
-                <tr>
-                    <td>CompTIA A+</td>
-                    <td>CompTIA</td>
-                </tr>
-                <tr>
-                    <td>CompTIA Project+</td>
-                    <td>CompTIA</td>
-                </tr>
-                <tr>
-                    <td>ITIL Foundation</td>
-                    <td>AXELOS</td>
-                </tr>
-            </tbody>
-        </table>
+
+        <ul>
+            <li>CompTIA Security+</li>
+            <li>CompTIA Network+</li>
+            <li>CompTIA A+</li>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>CompTIA Project+</li>
+            <li>ITIL Foundation</li>
+        </ul>
     </section>
 
-</section>
+    <!-- Professional Goals -->
+    <section class="animate">
+        <h2>Professional Development &amp; Career Goals</h2>
+
+        <p>
+            My professional interests are centered on enterprise automation,
+            cloud infrastructure, and systems engineering. I aim to build on
+            my systems administration experience by developing scalable,
+            reliable infrastructure and automating complex IT operations.
+        </p>
+
+        <p>Areas of continued development include:</p>
+
+        <ul>
+            <li>Enterprise-scale PowerShell and workflow automation.</li>
+            <li>Cloud infrastructure, architecture, and administration.</li>
+            <li>Systems engineering and infrastructure design.</li>
+            <li>Enterprise monitoring, reliability, and operational efficiency.</li>
+            <li>Microsoft cloud technologies and AWS cloud fundamentals.</li>
+            <li>Applying business and technical solutions to improve IT operations.</li>
+        </ul>
+
+        <p>
+            My long-term objective is to progress into systems engineering,
+            infrastructure engineering, or cloud-focused roles where I can
+            combine technical administration, automation, and infrastructure
+            design to support reliable enterprise environments.
+        </p>
+
+        <p>
+            <a href="career-goals.html">Explore my career goals and project portfolio</a>
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section class="animate">
+        <h2>Contact</h2>
+
+        <p>
+            I welcome opportunities involving systems administration,
+            enterprise automation, infrastructure engineering, and cloud technologies.
+        </p>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:travis.daniels4@yahoo.com">travis.daniels4@yahoo.com</a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/travis-l-daniels"
+               target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/travis-l-daniels
+            </a>
+        </p>
+
+        <p>
+            <strong>Portfolio:</strong>
+            <a href="https://travis-daniels.github.io/My-portfolio/"
+               target="_blank" rel="noopener noreferrer">
+                travis-daniels.github.io/My-portfolio
+            </a>
+        </p>
+    </section>
+
 </main>
 
 <footer>
-    <p>&copy; 2026 Travis Daniels. All rights reserved.</p>
+    <p>&copy; <span id="currentYear"></span> Travis Daniels. All rights reserved.</p>
 </footer>
 
 <script>
-  const sections = document.querySelectorAll('section.animate');
+    // Display the current date as the resume's last updated date.
+    document.getElementById("lastUpdated").textContent =
+        new Date().toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric"
+        });
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+    // Automatically update the footer year.
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+    // Animate sections as they enter the viewport.
+    document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll("section.animate");
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(
+                function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.1
+                }
+            );
+
+            sections.forEach(function (section) {
+                observer.observe(section);
+            });
+        } else {
+            sections.forEach(function (section) {
+                section.classList.add("visible");
+            });
+        }
     });
-  }, { threshold: 0.1 });
-
-  sections.forEach(section => observer.observe(section));
 </script>
+
 </body>
 </html>
